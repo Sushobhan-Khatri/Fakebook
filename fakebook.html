@@ -2,30 +2,119 @@
   <head>
     <title>Fakebook</title>
     <style>
+        body{
+            background-color: #f2f4f7;
+        }
+        .img1
+        {
+            text-align: center;
+            margin-top: 45px;
+        }
+        .text{
+          text-align: justify;
+          width: 300px;
+          margin: 0 auto;
+          margin-top: 10px;
+          margin-bottom: 30px;
+          font-family: Helvetica, Arial, sans-serif;
+          font-size: 20px;
+        }
+        p{
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: larger;
+            width: 380px;
+        }
+      .form{
+        width: 400px;
+        height: 415px;
+        border: 2px solid white;
+        background-color:#fff;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px grey;
+      }
+      .name{
+        width:370px;
+        height: 50px ;
+        border-radius: 5px;
+        color: gray;
+        opacity: 0.7;
+        margin: 7px;
+        font-family: Helvetica, Arial, sans-serif;
+        padding-left: 10px;
+        border: 0.2px solid grey;
+        font-size: medium;
+      }
+      .login button{
+        width:370px;
+        height: 50px ;
+        border-radius: 5px;
+        font-family: Helvetica, Arial, sans-serif;
+        padding-left: 10px;
+        color: white;
+        background-color:#1877F2;
+        font-weight: 700;
+        font-size: 19px;
+        border: 0px;
+        margin: 8px;
+      }
+      .link {
+        text-decoration: none;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: small;
+        margin: 15px;
+        height: max-content;
+      }
+      a{
+         text-decoration: none;
+         color: #1172cc;
+      }
+      hr{
+        color: grey;
+        opacity: 0.4;
+        width: 360px;
+        margin: 20px;
+      }
+      .create button{
+        width:200px;
+        height: 50px ;
+        border-radius: 5px;
+        font-family: Helvetica, Arial, sans-serif;
+        padding-left: 10px;
+        color: white;
+        background-color:#0bce18;
+        font-weight: 700;
+        font-size: 15px;
+        border: 0px;
+        margin: 8px;
+      }
     </style>
   </head>
   <body>
-    <table>
-      <tr>
-        <td>
-    <div>
-      <h1>facebook</h1>
-      <h3>Connect with friends and the world around you on Facebook</h3>
-      </td>
-        <td>
+    <div class="img1">
+      <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" length="175px" width="225px">
     </div>
+    <p class="text">Facebook helps you connect and share with the people in your life.</p>
     <div class="form">
+      <p>Log Into Facebook</p>
       <form>
-        <input type="text" placeholder="Enter Email or Phone Number"><br>
-        <input type="password" placeholder="Enter Password"><br>
-        <button>Login</button>
+        <input class="name" type="text" placeholder="Email or Phone Number">
+        <input class="name" type="password" placeholder="Password">
+        <div class="login">
+        <a href="#"><button class="button">Log In</button></a>
+        </div>
+        <div class="link">
         <a href="#">Forgot Password?</a>
+        </div>
         <hr>
-        <button>Create New account</button>
+        <div class="Create">
+        <a href="#"><button>Create New account</button></a>
+        </div>
       </form>
     </div>
-    </td>
-      </tr>
-    </table>
   </body>
 </html>
